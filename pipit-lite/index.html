@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pipit AI Lite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Pipit AI Lite</h1>
+
+<label>Upload Foto</label>
+<input type="file" id="photo" accept="image/*">
+
+<img id="preview" class="preview">
+
+<label>Upload Audio</label>
+<input type="file" id="audio" accept="audio/*">
+
+<audio id="player" controls></audio>
+
+<label>Prompt Gerakan</label>
+<textarea id="prompt"
+placeholder="contoh:
+bernyanyi sambil tersenyum dan mengangguk"></textarea>
+
+<button id="generateBtn">
+Generate Video
+</button>
+
+<div id="loading" class="loading hidden">
+<div class="spinner"></div>
+<p>Generating Video...</p>
+</div>
+
+<video id="videoResult" controls></video>
+
+<a id="downloadBtn" class="download hidden">
+Download Video
+</a>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
